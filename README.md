@@ -1,3 +1,14 @@
+Bonjour Benoît,
+
+Je te souhaite bon courage pour les corrections. Mon projet bonus fonctionne, mais honnêtement, je n'ai pas eu le temps de gérer les erreurs comme le fait le framework RE avec sa gestion intégrée des exceptions.
+Je n'ai pas non plus utilisé le fichier de configuration excel, qui est pourtant un des points forts du REF pour stocker les paramètres de manière externe. Malgré ca j'ai vraiment compris l'utilité du framework RE. 
+C'est très modulaire et permet de rendre les robots bien plus fiable.
+C'est extrêmement intéressant et cela permet de gérer la réaction de notre robot de manière efficace. Encore merci pour ces cours.
+
+À bientôt.
+
+
+
 ### Documentation is included in the Documentation folder ###
 
 
