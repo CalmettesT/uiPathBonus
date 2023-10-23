@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>505,1372</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>931.3333333333334,1380.6666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Initialization_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -139,7 +139,7 @@
       <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="472,1307" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="472,1316" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="idEmail" />
       <Variable x:TypeArguments="ss:SecureString" Name="mdpEmail" />
@@ -152,24 +152,24 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="410,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
-    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="mdpMailCredidential" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="410,144" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[mdpEmail]" Username="[idEmail]" />
-    <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="410,25" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABJEHM6VaAkCW8OypoQAXbwAAAAACAAAAAAAQZgAAAAEAACAAAACjRzQZ0Muyh3NDKG98CRpeQxsicXAOvbRdzKvQHqwSHQAAAAAOgAAAAAIAACAAAAAFURXY91MX+GJsMGdlZ+0ZlyRYU/Jaiomjp2U4ETy3FSAAAADQ5MKY3vH7UXB7ZTLqbsk8qfpGikYWf62YeaCPcHNrdkAAAAARhojMYZSUMJG6WTeRZ2+U9LyDQdGSp/4zEmgPNoKPE/IE/VIlAXJcGTlYXrDuOk49xH47I9EsfUo2yjLfiVX9" Result="[mdpGmail]" />
-    <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" FilterExpression="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[idEmail]" EnableSSL="True" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="410,25" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" IgnoreCRL="False" MailFolder="Inbox" MarkAsRead="False" Messages="[out_extractMessage]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Password="[mdpGmail]" Port="993" SecureConnection="Auto" Server="imap.gmail.com" Top="5" />
-    <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="410,655" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[out_extractMessage]">
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="410,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="mdpMailCredidential" CacheStrategy="None" DisplayName="Get Credential" FolderPath="thomaslanacoco@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="410,144.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[mdpEmail]" Username="[idEmail]" />
+    <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="410,25.333333333333332" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABJEHM6VaAkCW8OypoQAXbwAAAAACAAAAAAAQZgAAAAEAACAAAACjRzQZ0Muyh3NDKG98CRpeQxsicXAOvbRdzKvQHqwSHQAAAAAOgAAAAAIAACAAAAAFURXY91MX+GJsMGdlZ+0ZlyRYU/Jaiomjp2U4ETy3FSAAAADQ5MKY3vH7UXB7ZTLqbsk8qfpGikYWf62YeaCPcHNrdkAAAAARhojMYZSUMJG6WTeRZ2+U9LyDQdGSp/4zEmgPNoKPE/IE/VIlAXJcGTlYXrDuOk49xH47I9EsfUo2yjLfiVX9" Result="[mdpGmail]" />
+    <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" FilterExpression="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[idEmail]" EnableSSL="True" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="410,25.333333333333332" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" IgnoreCRL="False" MailFolder="Inbox" MarkAsRead="False" Messages="[out_extractMessage]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Password="[mdpGmail]" Port="993" SecureConnection="Auto" Server="imap.gmail.com" Top="5" />
+    <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="410,660" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[out_extractMessage]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="snm:MailMessage">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="currentItem" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="376,467" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="376,470" sap2010:WorkflowViewState.IdRef="Sequence_20">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[currentItem.Subject]" />
-            <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="334,196" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="EmailInformationQueue">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[currentItem.Subject]" />
+            <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" sap:VirtualizedContainerService.HintSize="334,198" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="EmailInformationQueue">
               <ui:AddQueueItem.ItemInformation>
                 <InArgument x:TypeArguments="x:String" x:Key="1">[currentItem.Subject]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="2">[currentItem.Sender.ToString]</InArgument>
